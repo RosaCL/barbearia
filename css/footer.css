@@ -1,0 +1,69 @@
+.consti{
+    width: 160px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: #ffffff;
+}
+.footer a{
+    color: #0c2135;
+}
+.footer-itens{
+    display: flex;
+    gap: 8px;
+    color: #ffffff;
+}
+.map h2{
+    color: #090d11;
+    text-align: center;
+    font-size: 2em;
+    background-color: #ffffff;
+
+}
+.logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp-btn{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+}
+.whatsapp-btn img{
+    max-width: 74px;
+    transition: transform 0.4s;
+}
+.whatsapp-btn img:hover{
+    transform: scale(1.1);
+}
+.whatsapp-btn .tooltip-txt{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #16161633;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.whatsapp-btn:hover .tooltip-txt{
+    visibility: visible;
+    opacity: 1;
+}
+@media screen and (max-width:768px) {
+    .whatsapp-btn img{
+        max-width: 64px;
+    }
+    
+}
